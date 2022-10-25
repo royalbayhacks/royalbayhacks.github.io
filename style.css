@@ -33,7 +33,7 @@ body {
     font-size: 20%;
 }
 
-.section-level-1 {
+.section-level-1, .section-level-2, .section-level-3, .section-level-4 {
     height: 98vh;
 }
 
@@ -107,7 +107,19 @@ body {
 }
 
 @media only screen and (max-width : 480px) {
+    .top-text {
+        font-size: 35%;
+    }
+
     .big-side {
         padding: 20px;
     }
+
+    .section-level-1, .section-level-2, .section-level-3, .section-level-4 {
+        height: unset;
+    }
+
+    .section-level-4 .section-body-text {
+        height: 50vh;
+    }   
 }
