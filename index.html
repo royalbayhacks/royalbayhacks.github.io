@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30b52b7c2b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <body>
     <div class="container-fluid">
-        <div class="top-banner broad-border row d-flex align-content-center">
+        <div class="top-banner broad-border row d-flex align-content-center" id="top-banner">
             <div class="w-100 d-flex justify-content-center">
                 <h1 class="top-text">Royal Bay Hacks</h1>
             </div>
@@ -25,7 +25,7 @@
                 <h2 class="blink top-subtext">scroll to start</h2>    
             </div>
         </div>
-        <div class="row broad-border section-level-1">
+        <div class="row broad-border section-level-1" id="level-one">
             <div class="col-md-8 col-xs-12 big-side d-flex align-items-center">
                 <h2>
                     <strong>Date:</strong> To Be Determined <br>
@@ -38,11 +38,11 @@
             <div class="col-md-4 col-xs-12 small-side d-flex align-items-center justify-content-center">
                 <div class="section-title d-flex flex-column align-items-center justify-content-center">
                     <h1>Lvl 1.</h1>
-                    <h2>Event Details</h2>
+                    <h2>Details</h2>
                 </div>
             </div>
         </div>
-        <div class="row broad-border section-level-1">
+        <div class="row broad-border section-level-1" id="level-two">
             <div class="col-md-4 col-xs-12 small-side d-flex align-items-center justify-content-center">
                 <div class="section-title d-flex flex-column align-items-center justify-content-center">
                     <h1>Lvl 2.</h1>
@@ -61,7 +61,7 @@
                 </h2>
             </div>
         </div>
-        <div class="row broad-border section-level-1">
+        <div class="row broad-border section-level-1" id="level-three">
             <div class="col-md-8 col-xs-12 big-side d-flex align-items-center">
                 <div class="accordion w-100 accordian-style" id="accordionExample">
                     <div class="accordion-item">
@@ -130,20 +130,26 @@
                 </div>
             </div>
         </div>
-        <div class="row broad-border section-level-1">
+        <div class="row broad-border section-level-1" id="level-four">
             <div class="col-md-4 col-xs-12 small-side d-flex align-items-center justify-content-center">
-                <div class="section-title d-flex flex-column align-items-center justify-content-center">
+                <div class="section-title d-flex flex-column align-items-center justify-content-center text-center">
                     <h1>Lvl 4.</h1>
-                    <h2>Schedule</h2>
+                    <h2>Schedule & Sponsors</h2>
                 </div>
             </div>
             <div class="col-md-8 col-xs-12 big-side d-flex align-items-center justify-content-center">
-                <h2>Coming Soon!</h2>
+                <h2> Coming Soon! <br> <br>
+                     If you are interested in sponsoring, please contact us at royalbayhacks@gmail.com.
+                </h2>
             </div>
         </div>
     </div>
     <nav class="navbar fixed-bottom navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="#">Fixed bottom</a>
+        <a class="navbar-brand" href="#top-banner"><i class="fa-solid fa-arrow-up"></i></a>
+        <a class="navbar-brand" href="#level-one">Details</a>
+        <a class="navbar-brand" href="#level-two">Hackathon</a>
+        <a class="navbar-brand" href="#level-three">FAQ</a>
+        <a class="navbar-brand" href="#level-four">Etc.</a>
     </nav>
 </body>
 
