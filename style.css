@@ -1,71 +1,132 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
-    color: #ab20fd;
-    font-family: 'VT323', monospace;
+    background-color: #190425;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    cursor: crosshair;
     overflow-x: hidden;
 }
 
-.top-banner {
-    height: 98vh;
-    font-size: 350%;
+.container-fluid {
+    --bs-gutter-x: 0 !important;
 }
 
-.broad-border {
-    border-color: white;
-    border-style: solid;
-    border-width: 10px;
+.table {
+    --bs-table-hover-color: white !important;
+    table-layout: fixed;
+}
+
+.top-banner {
+    height: 93vh;
+    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.top-banner-first-slide {
+    padding: 10rem;
 }
 
 .top-text {
-    font-family: 'Press Start 2P', cursive;
-    text-shadow: 2px 2px white;
-}
-
-.top-subtext {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Mono', monospace;
     color: white;
-    font-size: 20%;
+    font-size: 1200%;
 }
 
-.section-level-1, .section-level-2, .section-level-3, .section-level-4 {
+.section-details {
     height: 98vh;
+    display: flex;
+    align-content: space-evenly;
 }
 
-.small-side {
-    background-color: #ab20fd;
+.section-schedule,
+.section-faq {
+    height: 98vh;
+    display: flex;
+    align-content: flex-start;
+}
+
+.section-sponsors {
+    height: 98vh;
+    display: flex;
+    align-content: flex-start;
+}
+
+.sponsor-card,
+.detail-card,
+.schedule-card {
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+}
+
+.detail-card {
     height: 100%;
 }
 
-.section-title {
-    height: 40%;
-    width: 40%;
-    background-color: white;
-    color: #ab20fd;
+.detail-card>span>i {
+    padding-top: 20%;
 }
 
-.big-side {
-    padding: 100px;
-    height: 100%;
+.schedule-card {
+    width: 70%;
+    margin-top: 2%;
 }
 
-.bg-color-white {
-    background-color: white;
+.sponsor-card {
+    margin-top: 3%;
 }
 
-.color-primary {
-    color: #ab20fd;
+a {
+    text-decoration: none !important;
 }
 
-.accordian-style {
-    background-color: white;
-    color: #ab20fd;
+.registration-button {
+    border-radius: 1.5rem;
+    background-color: #190425;
+    color: white;
+    border: solid;
+    padding: 1rem;
+}
+
+.registration-button:hover {
+    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0.5rem 1rem rgba(145, 92, 182, .4);
+}
+
+.registration-button h2 {
+    margin-bottom: 0;
+}
+
+.schedule-table {
+    color: white;
+}
+
+.accordion-item {
+    margin: 2rem;
+    border-radius: 1.5rem !important;
+}
+
+#faqAccordion .accordion-item:not(:first-of-type) {
+    border-top: 1px solid white;
+}
+
+.accordion-button {
+    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+    color: white;
     font-size: 90%;
+    border: none;
+    border-radius: 1.5rem !important;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url(./visual-assets/accordion-button.svg);
 }
 
 .accordion-button:not(.collapsed) {
@@ -75,8 +136,7 @@ body {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-color: white;
-    background-image: none;
+    background-image: url(./visual-assets/accordion-button.svg);
 }
 
 .accordion-button:focus {
@@ -87,39 +147,100 @@ body {
     font-size: 150%;
 }
 
-.blink {
-    animation: blink 1.5s steps(1, end) infinite;
+.accordion-item:not(:first-of-type) {
+    border-top: 0;
 }
 
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.mouse-cursor-gradient-tracking {
+    border-color: none;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
 }
 
 @media only screen and (max-width : 480px) {
-    .top-text {
-        font-size: 35%;
+    .h2, h2 {
+        font-size: 90%;
     }
 
-    .big-side {
-        padding: 20px;
+    .row {
+        margin: 0;
     }
 
-    .section-level-1, .section-level-2, .section-level-3, .section-level-4 {
+    .row>* {
+        padding: 0;
+    }
+
+    .table {
+        table-layout: unset;
+    }
+
+    .navbar-brand {
+        font-size: 100%;
+    }
+
+    .fa-10x {
+        font-size: 5rem;
+    }
+
+    .section-details,
+    .section-schedule,
+    .section-sponsors,
+    .section-faq {
         height: unset;
+        margin-top: 10%;
     }
 
-    .section-level-4 .section-body-text {
-        height: 50vh;
-    }   
+    .sponsor-card,
+    .detail-card,
+    .schedule-card {
+        border-radius: 1.5rem;
+        padding: 1rem 1rem;
+    }
+
+    .top-banner-first-slide {
+        padding: 3rem;
+        font-size: 300%;
+    }
+
+    .carousel-item h1 {
+        font-size: 100%;
+    }
+
+    .detail-card {
+        margin-top: 5%;
+    }
+    
+    .detail-card>span>i {
+        padding-top: 5%;
+    }
+
+    .registration-button {
+        margin-top: 20%;
+    }
+
+    .schedule-card {
+        width: 100%;
+    }
+
+    .schedule-table th {
+        min-width: 7rem;
+    }
+
+    .accordion-item {
+        margin: 0.5rem;
+    }
+    
+    .accordion-body-text {
+        font-size: 90%;
+    }
+
+    .section-faq {
+        margin-bottom: 5rem;
+    }
 }
