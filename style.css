@@ -209,7 +209,8 @@ a {
     }
 
     .carousel-item h1 {
-        font-size: 100%;
+        font-size: 150%;
+        padding-top: 8%;
     }
 
     .detail-card {
