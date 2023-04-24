@@ -48,17 +48,18 @@ body {
     height: 98vh;
     display: flex;
     align-content: flex-start;
+    margin-bottom: 10rem;
 }
 
 .section-faq {
-    height: 98vh;
+    height: 110vh;
     display: flex;
     align-content: flex-start;
-    margin-bottom: 25rem;
+    margin-bottom: 10rem;
 }
 
 .section-sponsors {
-    height: 98vh;
+    height: 140vh;
     display: flex;
     align-content: flex-start;
 }
@@ -85,6 +86,21 @@ body {
 
 .sponsor-card {
     margin-top: 3%;
+}
+
+.img-redbrick {
+    margin-top: 4rem;
+}
+
+.img-xr {
+    padding-top: 4rem;
+}
+
+.img-viatec {
+    margin-top: 4rem;
+    height: 40%;
+    width: 33%;
+    margin-right: 5%;
 }
 
 a {
@@ -168,6 +184,76 @@ a {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 992px) {
+    .section-schedule {
+        height: 78vh;
+    }
+
+    .section-details {
+        height: 50vh;
+    }
+
+    .section-sponsors {
+        height: 54vh;
+    }
+
+    .section-faq {
+        height: 70vh;
+    }
+    
+    .img-redbrick {
+        margin-top: 3rem;
+    }
+    
+    .img-xr {
+        height: 50%;
+        width: 60%;
+        margin: auto;
+    }
+
+    .img-viatec {
+        margin-top: 2rem;
+        height: 40%;
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-schedule {
+        height: 108vh;
+    }
+
+    .section-details {
+        height: 64vh;
+    }
+
+    .section-sponsors {
+        height: 80vh;
+    }
+    
+    .section-faq {
+        height: 90vh;
+    }
+
+    .img-redbrick {
+        margin-top: 3rem;
+    }
+    
+    .img-xr {
+        height: 50%;
+        width: 60%;
+        margin: auto;
+    }
+
+    .img-viatec {
+        margin-top: 2rem;
+        height: 40%;
+        width: 40%;
+        margin: auto;
+    }
+}
+
 @media only screen and (max-width : 480px) {
     .h2, h2 {
         font-size: 90%;
@@ -246,6 +332,18 @@ a {
         font-size: 90%;
     }
 
+    .img-xr {
+        height: 25%;
+        width: 60%;
+        margin: auto;
+    }
+
+    .img-viatec {
+        height: 25%;
+        width: 60%;
+        margin: auto;
+    }
+    
     .section-faq {
         margin-bottom: 5rem;
     }
