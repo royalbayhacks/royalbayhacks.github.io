@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Royal Bay Hacks</title>
-    <link rel="icon" type="image/x-icon" href="/visual-assets/rbhl.ico">
+    
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="visual-assets/rbh-logo-2024.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/30b52b7c2b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <h1 class="top-text" id="typed-text"></h1>
+        <div id="navbuttons">
+        <a class="navbar-brand" href="#top-banner"><i class="fa-solid fa-arrow-up"></i></a>
+        <a class="navbar-brand" href="#details">Details</a>
+        <a class="navbar-brand" href="#schedule">Schedule</a>
+        <a class="navbar-brand" href="#details">Registration</a>
+        <a class="navbar-brand" href="#sponsors">Sponsors</a>
+        <a class="navbar-brand" href="#faq">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Layout -->
     <div class="container-fluid">
         <div id="top-banner">
+
+            <!-- Carousel -->
             <div id="topCarousel" class="carousel slide top-banner" data-bs-ride="carousel">
                 <div class="carousel-inner h-100">
+
+                     <!-- Slide 1 --> 
                     <div class="carousel-item active">
                         <div class="top-banner-first-slide row h-100 d-flex justify-content-center align-content-center">
                             <div class="col-12">
-                                <h1 class="top-text" id="typed-text"></h1>
+                                <div class="text-center">
+                                    <img src="visual-assets/rbh-logo-2024.png" class="rounded" alt="HackathonLogo" width="700">
+                                  </div>
                             </div>
                         </div>
                     </div>
+
+                     <!-- Slide 2 --> 
                     <div class="carousel-item">
                         <div class="row h-100 d-flex justify-content-center align-content-center">
-                            <div class="col-md-3 col-8 order-1 d-flex justify-content-center align-items-end">
-                                <i class="fa-solid fa-lightbulb fa-10x"></i>
-                            </div>
-                            <div class="col-md-6 col-8 order-2 text-center">
-                                <h1>Come up with a technical solution to a problem society faces</h1>
+                            <div class="title-background d-flex justify-content-center align-content-center">
+                                <div class="col-md-3 col-8 order-1 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-lightbulb fa-10x"></i>
+                                </div>
+                                <div class="col-md-6 col-8 order-2 text-center d-flex align-items-center">
+                                    <h1>Come up with a technical solution to a problem</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                     <!-- Slide 3 --> 
                     <div class="carousel-item">
                         <div class="row h-100 d-flex justify-content-center align-content-center">
-                            <div class="col-md-6 col-8 order-2 text-center">
-                                <h1>Work on it for twelve hours</h1>
-                            </div>
-                            <div class="order-1 col-md-3 col-8 order-1 d-flex justify-content-center align-items-end">
-                                <i class="fa-solid fa-hourglass fa-10x"></i>
+                            <div class="title-background d-flex justify-content-center align-content-center">
+                                <div class="col-md-6 col-8 order-2 text-center d-flex align-items-center">
+                                    <h1>Work on it for twenty four hours</h1>
+                                </div>
+                                <div class="order-1 col-md-3 col-8 order-1 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-hourglass fa-10x"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                     <!-- Slide 4 --> 
                     <div class="carousel-item">
                         <div class="row h-100 d-flex justify-content-center align-content-center">
-                            <div class="col-md-3 col-8 order-1 d-flex justify-content-center align-items-end">
-                                <i class="fa-regular fa-face-laugh-squint fa-10x"></i>
-                            </div>
-                            <div class="col-md-6 col-8 order-2 text-center">
-                                <h1>Participate in workshops and mini-games</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row h-100 d-flex justify-content-center align-content-center">
-                            <div class="col-md-6 col-8 order-2 text-center">
-                                <h1>Present your project and win fun prizes and bragging rights</h1>
-                            </div>
-                            <div class="col-md-3 col-8 order-1 d-flex justify-content-center">
-                                <i class="fa-solid fa-trophy fa-10x"></i>
+                            <div class="title-background d-flex justify-content-center align-content-center">
+                                <div class="col-md-6 col-8 order-2 text-center d-flex align-items-center">
+                                    <h1>Present your project and win fun prizes</h1>
+                                </div>
+                                <div class="col-md-3 col-8 order-1 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-trophy fa-10x"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                 <!-- Carousel Controls --> 
                 <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,13 +110,15 @@
             </div>
         </div>
     </div>
+
+    <!-- Details -->
     <div class="container">
         <div class="row section-details d-flex align-items-center" id="details">
             <div class="row d-flex justify-content-between align-items-center h-50">
                 <div class="detail-card col-md-3 col-12 text-center">
                     <span><i class="fa-solid fa-calendar-day fa-5x"></i></span>
                     <span>
-                        <h2><br>April 29th, 2023</h2>
+                        <h2><br>March 16th, 2024</h2>
                     </span>
                 </div>
                 <div class="detail-card col-md-3 col-12 text-center">
@@ -106,8 +134,10 @@
                     </span>
                 </div>
             </div>
+
+            <!-- Registration Button -->
             <div class="col-12 d-flex justify-content-center">
-                <a class="home-buttons btn-reverse" href="https://forms.gle/UkJPDbVygkmGb98Q8" target="_blank"
+                <a class="home-buttons btn-reverse" href="https://forms.gle/E7YkWjU7cBRb14jz8" target="_blank"
                     rel="noopener noreferrer">
                     <div class="registration-button">
                         <h2>Register</h2>
@@ -115,6 +145,8 @@
                 </a>
             </div>
         </div>
+
+        <!-- Schedule -->
         <div class="row section-schedule" id="schedule">
             <div class="col-12 justify-content-center">
                 <div class="d-flex justify-content-center align-items-center">
@@ -128,37 +160,46 @@
                 <div class="schedule-card col-md-9 col-12 d-flex justify-content-center align-items-center">
                     <div class="table-responsive">
                         <table class="schedule-table table table-hover table-borderless">
+                            <!-- Row 1 -->
                             <thead>
                                 <tr>
                                     <th>Time</th>
                                     <th>Tables</th>
-                                    <th>RM 2151</th>
-                                    <th>RM 2153</th>
-                                    <th>RM 2147</th>
+                                    <th>RM 0000</th>
+                                    <th>RM 0000</th>
+                                    <th>RM 0000</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
+
+                                <!-- Row 2 -->
                                 <tr>
                                     <td>08:00 AM</td>
-                                    <td colspan="3">Opening Ceremony</td>
+                                    <td colspan="3"></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
+                                
+                                <!-- Row 3 -->
                                 <tr>
                                     <td>08:30 AM</td>
                                     <td>Breakfast</td>
                                     <td>Hacking</td>
                                     <td>Hacking</td>
-                                    <td colspan="2">UX/UI Design with HighTechU</td>
+                                    <td colspan="2"></td>
                                 </tr>
+
+                                <!-- Row 4 -->
                                 <tr>
                                     <td>10:00 AM</td>
                                     <td></td>
                                     <td>Hacking</td>
                                     <td>Hacking</td>
-                                    <td colspan="2">Project Management and Business Analysis Talk</td>
+                                    <td colspan="2"></td>
                                 </tr>
+
+                                <!-- Row 5 -->
                                 <tr>
                                     <td>11:00 AM</td>
                                     <td></td>
@@ -166,6 +207,8 @@
                                     <td>Hacking</td>
                                     <td colspan="2"></td>
                                 </tr>
+
+                                <!-- Row 6 -->
                                 <tr>
                                     <td>12:00 AM</td>
                                     <td>Lunch</td>
@@ -174,27 +217,35 @@
                                     <td></td>
                                     <td></td>
                                 </tr>
+
+                                <!-- Row 7 -->
                                 <tr>
                                     <td>02:00 PM</td>
                                     <td></td>
                                     <td>Hacking</td>
                                     <td>Hacking</td>
-                                    <td colspan="2">Typing Speed Tournament</td>
+                                    <td colspan="2"></td>
                                 </tr>
+
+                                <!-- Row 8 -->
                                 <tr>
                                     <td>03:30 PM</td>
                                     <td></td>
                                     <td>Hacking</td>
                                     <td>Hacking</td>
-                                    <td colspan="2">Careers in Software with Workday (+ Giveaway)</td>
+                                    <td colspan="2"></td>
                                 </tr>
+
+                                <!-- Row 9 -->
                                 <tr>
                                     <td>04:00 PM</td>
                                     <td></td>
                                     <td>Hacking</td>
                                     <td>Hacking</td>
-                                    <td colspan="2">Cup Stacking Competition</td>
+                                    <td colspan="2"></td>
                                 </tr>
+
+                                <!-- Row 10 -->
                                 <tr>
                                     <td>06:00 PM</td>
                                     <td>Dinner</td>
@@ -203,6 +254,8 @@
                                     <td></td>
                                     <td></td>
                                 </tr>
+
+                                <!-- Row 11 -->
                                 <tr>
                                     <td>08:30 PM</td>
                                     <td></td>
@@ -211,12 +264,16 @@
                                     <td></td>
                                     <td></td>
                                 </tr>
+
+                                <!-- Row 12 -->
                                 <tr>
                                     <td>10:00 PM</td>
-                                    <td colspan="3">Closing Ceremony</td>
+                                    <td colspan="3"></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
+
+                                <!-- Row 13 -->
                                 <tr>
                                     <td>10:30 PM</td>
                                     <td>End</td>
@@ -231,6 +288,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Sponsors -->
         <div class="row section-sponsors" id="sponsors">
             <div class="d-flex justify-content-center align-items-center">
                 <h1>Sponsors</h1>
@@ -238,22 +297,23 @@
             <div class="d-flex align-items-start justify-content-center h-100">
                 <div class="sponsor-card col-md-9 col-12 d-flex justify-content-center">
                     <div class="row justify-content-between pt-4">
-                        <img class="col-12 col-md-5 img-fluid img-logo img-wday" src="visual-assets/logo_wday_reversed.svg">
-                        <img class="col-12 col-md-5 img-fluid img-logo img-redbrick" src="visual-assets/redbrick-wordmark-inverted (2).svg">    
-                        <img class="col-12 col-md-5 img-fluid img-logo img-xr" src="visual-assets/XR Arcade Logo(tp).webp">    
-                        <img class="col-12 col-md-5 img-fluid img-logo img-viatec" src="visual-assets/VIATEC-combinedLogo_wht.png">
-                        <img class="col-12 col-md-6 img-fluid img-logo img-blockstream mx-auto" src ="visual-assets/blks_logo_white_on_transparent_cmyk.svg">
+                        <h1>TBD, email us at royalbayhacks@gmail.com if you want to sponsor us!</h1>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Frequently Asked Questions -->
         <div class="row section-faq" id="faq">
             <div class="d-flex justify-content-center align-items-center">
                 <h1>FAQ</h1>
             </div>
+
             <div class="d-flex align-items-start justify-content-center h-100">
                 <div class="col-md-9 col-12 d-flex align-items-center justify-content-center">
                     <div class="accordion" id="faqAccordion">
+
+                        <!-- FAQ #1 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -264,18 +324,20 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body accordion-body-text">
-                                    You can find us at the email royalbayhacks@gmail.com, with a Discord coming soon.
+                                    You can find us at the email royalbayhacks@gmail.com.
                                 </div>
                             </div>
                         </div>
+
+                        <!-- FAQ #2 -->
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
+                            <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <span class="pe-3">Is there a theme? What will contestants be making?</span>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body accordion-body-text">
                                     There is no theme. The contestants will be working on software, hardware, middleware,
@@ -283,6 +345,26 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- FAQ #3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="pe-3">Do we have to bring our own computers?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body accordion-body-text">
+                                    There will be computer labs open at the event for use that have Unity, Visual Studio Code, and Eclipse. 
+                                    We will be happy to assist with installing any necessary software and dependencies. However, we recommend
+                                    bringing your own computer for the best results and coding environment. 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ #4 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -298,6 +380,8 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <!-- FAQ #5 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -309,10 +393,12 @@
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body accordion-body-text">
                                     The teams will consist of 2 - 4 people. You will be able to find people to team up with
-                                    through our Discord and at the event itself.
+                                    at the event itself.
                                 </div>
                             </div>
                         </div>
+
+                        <!-- FAQ #6 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -324,7 +410,8 @@
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body accordion-body-text">
                                     No, you do not need to know how to code to participate. The event is beginner friendly and we have 
-                                    a prize category separately for inexperienced students.
+                                    a prize category separately for inexperienced students. We will be providing materials and there will
+                                    be mentors to assist students throughout the day. 
                                 </div>
                             </div>
                         </div>
@@ -333,13 +420,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar fixed-bottom navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="#top-banner"><i class="fa-solid fa-arrow-up"></i></a>
-        <a class="navbar-brand" href="#details">Details</a>
-        <a class="navbar-brand" href="#schedule">Schedule</a>
-        <a class="navbar-brand" href="#sponsors">Sponsors</a>
-        <a class="navbar-brand" href="#faq">FAQ</a>
-    </nav>
+
     <script>
         // scroll animation script
         var slideUp = { delay: 0, distance: '40%', duration: 1000 };
@@ -350,9 +431,9 @@
         ScrollReveal().reveal('.section-sponsors', slideUp);
         ScrollReveal().reveal('.section-faq', slideUp);
         
-        // top benner script
+        // top banner script
         var aText = new Array(
-            "royal bay hacks"
+            "2024 Royal Bay Hacks"
         );
         var iSpeed = 100; // time delay of print out
         var iIndex = 0; // start printing array at this posision

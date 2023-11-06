@@ -3,9 +3,9 @@ html {
 }
 
 body {
-    background-color: #190425;
+    background-color: #0d1948;
     color: white;
-    font-family: 'Roboto Mono', monospace;
+    font-family: monospace;
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -14,28 +14,75 @@ body {
     --bs-gutter-x: 0 !important;
 }
 
+.text-background {
+    color: #0d1948;
+}
+
 .table {
     --bs-table-hover-color: white !important;
     table-layout: fixed;
 }
 
+/*Carousel first Slide stuff */
+
+.title-background {
+    background: linear-gradient(to bottom right, rgba(26, 123, 129, 0.7), rgba(15, 27, 77, 0.7));
+    margin-top: 48px;
+    width: 100%;
+    height: 200px;
+}
+
 .top-banner {
-    height: 93vh;
-    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+    height: 100vh;
+    background-image: url("visual-assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .carousel-item {
     height: 100%;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    opacity: 1;
+    margin-top: 12px;
+}
+
 .top-banner-first-slide {
     padding: 10rem;
 }
 
+.img-hack {
+    padding-top: 46%;
+    max-height: 75%;
+    max-width: 155%;
+}
+
+/* Typography */
 .top-text {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    font-size: 1000%;
+    font-family: monospace;
+    color: #000;
+    font-size: 125%;
+    letter-spacing: .15em; 
+    padding-left: 0.5%;
+    padding-top: 0.3%;
+    overflow: hidden; 
+    animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end 3s;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+}
+
+/*Navigation Bar Buttons */
+.navbuttons { 
+    align-content: center;
+}
+
+h1 { 
+    font-family: monospace;
 }
 
 .section-details {
@@ -69,7 +116,11 @@ body {
 .schedule-card {
     border-radius: 1.5rem;
     padding: 1rem 2rem;
-    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+    background: linear-gradient(to bottom right, #1A7B81, #0F1B4d);
+}
+
+.sponsor-card{
+    padding: 7rem;
 }
 
 .detail-card {
@@ -109,14 +160,14 @@ a {
 
 .registration-button {
     border-radius: 1.5rem;
-    background-color: #190425;
+    background-color: #0F1B4d;
     color: white;
     border: solid;
     padding: 1rem;
 }
 
 .registration-button:hover {
-    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+    background: linear-gradient(to bottom right, #1A7B81, #0F1B4d);
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 0.5rem 1rem rgba(145, 92, 182, .4);
 }
@@ -139,7 +190,7 @@ a {
 }
 
 .accordion-button {
-    background: linear-gradient(70deg, #21105F, #3D0E50, #5E0B36);
+    background: linear-gradient(to bottom right, #1A7B81, #0F1B4d);
     color: white;
     font-size: 90%;
     border: none;
@@ -152,8 +203,8 @@ a {
 
 .accordion-button:not(.collapsed) {
     color: white;
-    background-color: #ab20fd;
-    box-shadow: inset 0 -1px 0 #ab20fd;
+    background-color: #1A7B81;
+    box-shadow: inset 0 -1px 0 #1A7B81;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -273,6 +324,7 @@ a {
 
     .navbar-brand {
         font-size: 100%;
+        font-family: monospace;
     }
 
     .fa-10x {
@@ -296,7 +348,7 @@ a {
 
     .top-banner-first-slide {
         padding: 3rem;
-        font-size: 300%;
+        font-size: 200%;
     }
 
     .carousel-item h1 {
